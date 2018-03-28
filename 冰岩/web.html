@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1">
+    <ul>
+        <li><img src="1.jpg" alt=""/></li>
+        <li><img src="2.jpg" alt=""/></li>
+        <li><img src="3.jpg" alt=""/></li>
+        <li><img src="4.jpg" alt=""/></li>
+    </ul>
+</div>
+<div>
+    <input type="button" id="bn" value="获取信息">
+</div>
+<div id="div2"></div>
+<script src="pmd.js"></script>
+<script type="text/javascript">
+   
+        $.ajax({
+            dataType: "JSONP",
+            jsonp: "callback",//请求自动带上callback参数，callback值为jsonpCallback的值
+            jsonpCallback: "login",//接口服务器应该返回字符串数据格式：login(JSON数据)
+            type: "post",
+            url: "https://api.douban.com/v2/book/1220562",//接口服务器地址
+            data: {},//请求数据
+            success: function (response) {
+                //成功执行
+                console.log(response);
+            },
+            error: function (e) {
+                //失败执行
+                alert(e.status + ',' + e.statusText);
+            }
+        });
+</script>
+<script type="text/javascript">
+        $(function() {
+            $('#bn').click(function() {
+                var itemsContainer = document.getElementsById('div2')[0];
+                var li = document.createElement('li');
+                li.innerHTML = response.binding;
+            });
+</script>
+</body>
+</html>
