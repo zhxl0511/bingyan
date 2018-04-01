@@ -1,0 +1,48 @@
+.content_wrapper{
+    margin-left: 8%;
+    margin-top: 7%;
+}
+.content_wrapper .list_wrapper ul,li {
+    list-style-type: none;
+}
+
+
+.content_wrapper .list_wrapper ul li {
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+
+}
+
+.content_wrapper .list_wrapper ul li:hover {
+    cursor: pointer;
+    background-color: #E9DC51;
+}
+
+.content_wrapper .list_wrapper ul li p {
+    word-break:break-all;
+    width: 115px;
+    margin-left: 75px;
+}
+.content_wrapper .list_wrapper ul li img {
+    margin-left: 75px;
+    border-radius: 5%;
+    margin-top: 50px;
+}
+
+.content_wrapper .list_wrapper ul .clear {
+    clear: both;
+}
+
+.content_wrapper .load_button {
+    padding: 10px;
+}
+#lobn{
+    margin-left: 26%;
+    width: 40%;
+    height: 30px;
+    border-style: none;
+    background-color: #a3be8c;
+    border-radius: 10%;
+}

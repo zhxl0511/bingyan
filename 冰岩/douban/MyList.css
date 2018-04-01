@@ -1,0 +1,26 @@
+.content_wrapper .list_wrapper ul {
+    list-style-type: none;
+}
+
+.content_wrapper .list_wrapper ul li {
+    float: left;
+    width: 250px;
+    height: 250px;
+}
+
+.content_wrapper .list_wrapper ul li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.content_wrapper .list_wrapper ul li p {
+    word-break:break-word;
+}
+
+.content_wrapper .list_wrapper ul .clear {
+    clear: both;
+}
+
+.content_wrapper .load_button {
+    padding: 50px;
+}

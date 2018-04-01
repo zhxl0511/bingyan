@@ -1,0 +1,50 @@
+body{
+    background-color: beige;
+}
+#top{
+    width: 100%;
+    height: 80px;
+    background-color: #a3be8c;
+    font-size: 4rem;
+    font-family: 华文琥珀;
+}
+#main-s{
+    height: 240px;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+#inform li{
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+#inform{
+    float: left;
+}
+#bookimg{
+    width: 160px;
+    height: 220px;
+    float: left;
+}
+h1{
+    font-size: 2rem;
+    display: block;
+}
+#btns{
+    display: block;
+    margin-left: 10%;
+}
+.btn{
+    background-color: #b94a48;
+    border-radius: 10%;
+    border: 3px solid #C21F39;
+    margin-left: 7px;
+    cursor: pointer;
+
+}
+#summ{
+    margin-left: 10%;
+}
+#sumn{
+    width: 500px;
+}
